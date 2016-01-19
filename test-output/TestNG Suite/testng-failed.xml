@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Suite]">
+  <test name="TestNG via Commandline">
+    <classes>
+      <class name="Demo.floraIndiaTestCase"/>
+    </classes>
+  </test> <!-- TestNG via Commandline -->
+  <test name="TestNG via Commandline(failed)">
+    <classes>
+      <class name="Demo.floraIndiaTestCase">
+        <methods>
+          <include name="Testcase2"/>
+          <include name="Testcase4"/>
+          <include name="Testcase3"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="Testcase1"/>
+        </methods>
+      </class> <!-- Demo.floraIndiaTestCase -->
+    </classes>
+  </test> <!-- TestNG via Commandline(failed) -->
+</suite> <!-- Failed suite [TestNG Suite] -->
